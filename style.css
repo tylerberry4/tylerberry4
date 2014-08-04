@@ -1,0 +1,113 @@
+@import url(http://fonts.googleapis.com/css?family=Megrim|Roboto:400,100);
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+header {
+  height: 650px;
+  background-image: url(http://i.imgur.com/J8VW1Mj.jpg?3);
+  background-position: 50% 40%;
+  opacity: .65; }
+
+.headerText {
+  position: relative;
+  bottom: 615px; }
+  @media screen and (max-width: 540px) {
+    .headerText {
+      bottom: 565px; } }
+
+h1 {
+  font-family: 'Megrim', cursive;
+  margin: 0;
+  text-align: center;
+  font-size: 5.4em;
+  color: #FF6B6B;
+  padding-top: 35px; }
+  @media screen and (max-width: 540px) {
+    h1 {
+      font-size: 3em; } }
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  color: #4ECDC4;
+  margin: 8px; }
+  @media screen and (max-width: 540px) {
+    h2 {
+      font-size: 1em; } }
+
+nav {
+  height: 200px;
+  text-align: center;
+  position: relative;
+  bottom: 185px;
+  background-color: #333d47; }
+  @media screen and (max-width: 540px) {
+    nav {
+      height: 150px; } }
+  nav .navIconContainer {
+    display: inline-block; }
+    nav .navIconContainer p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5em;
+      font-weight: lighter;
+      margin: 0;
+      color: #bdc3c7; }
+      @media screen and (max-width: 980px) {
+        nav .navIconContainer p {
+          font-size: 1em; } }
+  nav .imgContainer {
+    border: solid black 4px;
+    border-radius: 50%;
+    padding: 20px;
+    display: inline-block;
+    margin: 25px 100px 0 100px; }
+    @media screen and (max-width: 980px) {
+      nav .imgContainer {
+        margin: 25px 30px 0 30px; } }
+    @media screen and (max-width: 540px) {
+      nav .imgContainer {
+        border: none;
+        padding: none;
+        margin: 0; } }
+    nav .imgContainer img {
+      width: 100%;
+      height: 100%; }
+      nav .imgContainer img:hover {
+        transform: scale(1.2); }
+
+#lineBreak {
+  width: 500px;
+  height: 4px;
+  background-color: #bdc3c7;
+  margin: -100px auto 0 auto;
+  opacity: .5; }
+
+h3 {
+  font-size: 3em;
+  text-align: center;
+  font-family: 'Roboto', sans-serif; }
+
+section {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  section:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.portfolioPiece {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .portfolioPiece:last-child {
+    margin-right: 0; }
+  .portfolioPiece img {
+    width: 90%; }
