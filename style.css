@@ -7,18 +7,24 @@
 body {
   margin: 0; }
 
+p {
+  font-family: 'Roboto', sans-serif; }
+
 header {
   height: 650px;
   background-image: url(http://i.imgur.com/J8VW1Mj.jpg?3);
   background-position: 50% 40%;
   opacity: .65; }
+  @media screen and (max-width: 540px) {
+    header {
+      background-image: url(http://i.imgur.com/weXpw4S.jpg?2); } }
 
 .headerText {
   position: relative;
   bottom: 615px; }
   @media screen and (max-width: 540px) {
     .headerText {
-      bottom: 565px; } }
+      bottom: 525px; } }
 
 h1 {
   font-family: 'Megrim', cursive;
@@ -87,27 +93,71 @@ nav {
   background-color: #bdc3c7;
   margin: -100px auto 0 auto;
   opacity: .5; }
+  @media screen and (max-width: 540px) {
+    #lineBreak {
+      width: 200px; } }
 
 h3 {
   font-size: 3em;
   text-align: center;
   font-family: 'Roboto', sans-serif; }
 
-section {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  section:after {
-    content: "";
-    display: table;
-    clear: both; }
-
 .portfolioPiece {
+  padding: 50px;
   float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 31.76157%; }
-  .portfolioPiece:last-child {
-    margin-right: 0; }
+  width: 33%; }
+  @media screen and (max-width: 980px) {
+    .portfolioPiece {
+      width: 50%; } }
+  @media screen and (max-width: 540px) {
+    .portfolioPiece {
+      width: 100%; } }
   .portfolioPiece img {
-    width: 90%; }
+    width: 100%;
+    opacity: .85; }
+    .portfolioPiece img:hover {
+      opacity: 1; }
+
+.portfolioPiece p {
+  font-weight: lighter; }
+.portfolioPiece a {
+  text-decoration: none;
+  color: #FF6B6B; }
+  .portfolioPiece a:hover {
+    text-decoration: underline; }
+
+#lineBreak2 {
+  width: 500px;
+  height: 4px;
+  background-color: #bdc3c7;
+  opacity: .5;
+  clear: both;
+  margin: 0 auto; }
+  @media screen and (max-width: 540px) {
+    #lineBreak2 {
+      width: 200px; } }
+
+.aboutContainer {
+  text-align: center; }
+  .aboutContainer p {
+    margin: 50px auto;
+    width: 60%;
+    font-size: 1.5em;
+    font-weight: lighter; }
+    @media screen and (max-width: 540px) {
+      .aboutContainer p {
+        font-size: 1em; } }
+  .aboutContainer .photo {
+    float: middle;
+    width: 150px;
+    border-radius: 50%; }
+
+.icon {
+  width: 65px;
+  margin: 50px; }
+  .icon:hover {
+    transform: scale(1.2); }
+  @media screen and (max-width: 540px) {
+    .icon {
+      width: 50px;
+      margin: 10px; } }
