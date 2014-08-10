@@ -207,6 +207,12 @@ h3 {
     } 
 }
 
+.mobileHidden {
+  @media screen and (max-width: 750px) {
+      display: none;
+    }
+}
+
 
 
 
