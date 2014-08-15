@@ -19,6 +19,18 @@ header {
   opacity: .65;
   @media screen and (max-width: 540px) {
       background-image: url(http://i.imgur.com/weXpw4S.jpg?2);
+      height: 450px;
+    }
+}
+
+.logo {
+  width: 150px;
+  position: f;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  @media screen and (max-width: 800px) {
+      display: none;
     }
 }
 
@@ -27,7 +39,7 @@ header {
   bottom: 615px;
 
   @media screen and (max-width: 540px) {
-      bottom: 525px;
+      bottom: 400px;
     }
 }
 
@@ -59,7 +71,7 @@ nav {
   text-align: center;
   position: relative;
   bottom: 185px;
-  background-color: #333d47;
+  background-color: #546576;
 
   @media screen and (max-width: 540px) {
       height: 150px;
@@ -132,10 +144,12 @@ h3 {
   width: 33%;
 
   @media screen and (max-width: 980px) {
-      width: 50%;
+      width: 100%;
+      padding: 125px;
     }
   @media screen and (max-width: 540px) {
       width: 100%;
+      padding: 50px;
     }  
 
   img {
@@ -207,8 +221,8 @@ h3 {
     } 
 }
 
-.mobileHidden {
-  @media screen and (max-width: 750px) {
+#hiddenMobile {
+  @media screen and (max-width: 800px) {
       display: none;
     }
 }

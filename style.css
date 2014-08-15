@@ -17,14 +17,25 @@ header {
   opacity: .65; }
   @media screen and (max-width: 540px) {
     header {
-      background-image: url(http://i.imgur.com/weXpw4S.jpg?2); } }
+      background-image: url(http://i.imgur.com/weXpw4S.jpg?2);
+      height: 450px; } }
+
+.logo {
+  width: 150px;
+  position: f;
+  position: fixed;
+  z-index: 10;
+  top: 0; }
+  @media screen and (max-width: 800px) {
+    .logo {
+      display: none; } }
 
 .headerText {
   position: relative;
   bottom: 615px; }
   @media screen and (max-width: 540px) {
     .headerText {
-      bottom: 525px; } }
+      bottom: 400px; } }
 
 h1 {
   font-family: 'Megrim', cursive;
@@ -52,7 +63,7 @@ nav {
   text-align: center;
   position: relative;
   bottom: 185px;
-  background-color: #333d47; }
+  background-color: #546576; }
   @media screen and (max-width: 540px) {
     nav {
       height: 150px; } }
@@ -108,10 +119,12 @@ h3 {
   width: 33%; }
   @media screen and (max-width: 980px) {
     .portfolioPiece {
-      width: 50%; } }
+      width: 100%;
+      padding: 125px; } }
   @media screen and (max-width: 540px) {
     .portfolioPiece {
-      width: 100%; } }
+      width: 100%;
+      padding: 50px; } }
   .portfolioPiece img {
     width: 100%;
     opacity: .85; }
@@ -162,6 +175,6 @@ h3 {
       width: 50px;
       margin: 10px; } }
 
-@media screen and (max-width: 750px) {
-  .mobileHidden {
+@media screen and (max-width: 800px) {
+  #hiddenMobile {
     display: none; } }
