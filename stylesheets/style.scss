@@ -20,8 +20,14 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   // opacity: .65;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-items: center;
   align-items: center;
   margin-bottom: 20px;
   @media screen and (max-width: 980px) {
