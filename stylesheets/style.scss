@@ -10,33 +10,60 @@ body{
 
 p {
   font-family: 'Roboto', sans-serif;
+  color: #686868;
 }
 
 header {
-  height: 650px;
-  background-image: url(http://i.imgur.com/J8VW1Mj.jpg?3);
+  height: 100vh;
+  background-image: url(http://i.imgur.com/YpuR4YV.jpg);
   background-position: 50% 40%;
-  opacity: .65;
+  // opacity: .65;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
   @media screen and (max-width: 540px) {
-      background-image: url(http://i.imgur.com/weXpw4S.jpg?2);
+      background-image: url(http://i.imgur.com/49zZzgv.jpg?2);
       height: 450px;
     }
 }
 
-.logo {
-  width: 150px;
-  position: f;
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  @media screen and (max-width: 800px) {
-      display: none;
+.socialLinks {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  a {
+    margin-left: 10px;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    &:hover {
+      border-bottom: 2px solid #F5D76E;
+      padding-bottom: 8px;
     }
+  }
+  img {
+    width: 30px;
+  }
+}
+
+.logo {
+  width: 250px;
+  z-index: 10;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+
+  @media screen and (max-width: 540px) {
+      display: none;
+    }  
 }
 
 .headerText {
   position: relative;
   bottom: 615px;
+  visibility: hidden;
 
   @media screen and (max-width: 540px) {
       bottom: 400px;
@@ -124,7 +151,7 @@ nav {
   width: 500px;
   height: 4px;
   background-color: #bdc3c7;
-  margin: -100px auto 0 auto;
+  margin: 0 auto;
   opacity: .5;
   @media screen and (max-width: 540px) {
       width: 200px;
@@ -136,6 +163,7 @@ h3 {
   font-size: 3em;
   text-align: center;
   font-family: 'Roboto', sans-serif;
+  color: #252525;
 }
 
 // #wrapper {
@@ -161,10 +189,11 @@ h3 {
   img {
     width: 100%;
     opacity: .85;
+    border-radius: 3px;
 
-    &:hover {
-    opacity: 1;
-  }
+  //   &:hover {
+  //   opacity: 1;
+  // }
   }
   
 }
@@ -172,6 +201,7 @@ h3 {
 #firstRow {
   width: 100%;
   height: 500px;
+  overflow: hidden;
   @media screen and (min-width: 1500px) {
       height: 700px;
     }
@@ -180,6 +210,7 @@ h3 {
 #secondRow {
   width: 100%;
   height: 500px;
+  overflow: hidden;
   @media screen and (min-width: 1500px) {
       height: 700px;
     }
@@ -187,14 +218,20 @@ h3 {
 
 .portfolioPiece {
   p {
-    font-weight: lighter;
+    // font-weight: lighter;
   }
   a {
     text-decoration: none;
-    color: #FF6B6B;
+    color: #4B79BC;
     &:hover {
       text-decoration: underline;
     }
+  img {
+    border: solid grey 1px;
+    // -webkit-filter: grayscale(50%);
+    // -moz-filter: grayscale(50%);
+    // filter: grayscale(50%);
+    }  
   }
 }
 
@@ -218,7 +255,15 @@ h3 {
     margin: 50px auto;
     width: 60%;
     font-size: 1.5em;
-    font-weight: lighter;
+    color: #383838;
+    // font-weight: lighter;
+    a {
+      text-decoration: none;
+      color: #4B79BC;
+      &:hover {
+      text-decoration: underline;
+    }
+    }
     @media screen and (max-width: 540px) {
       font-size: 1em;
     }  
@@ -228,13 +273,14 @@ h3 {
     float: middle;
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 15%;
   } 
 }
 
 .icon {
   width: 65px;
   margin: 50px;
+  border-radius: 15%;
   &:hover {
     transform: scale(1.2);
   }
@@ -248,6 +294,12 @@ h3 {
   @media screen and (max-width: 800px) {
       display: none;
     }
+}
+
+.sliphover-container {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  color: #E2DA49;
 }
 
 
