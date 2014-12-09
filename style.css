@@ -21,10 +21,10 @@ header {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px; }
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 980px) {
     header {
       background-image: url(http://i.imgur.com/49zZzgv.jpg?2);
-      height: 450px; } }
+      height: 500px; } }
 
 .socialLinks {
   display: inline-block;
@@ -48,7 +48,7 @@ header {
   z-index: 10;
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s; }
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 980px) {
     .logo {
       display: none; } }
 
