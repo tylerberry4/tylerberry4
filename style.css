@@ -15,6 +15,8 @@ header {
   height: 100vh;
   background-image: url(http://i.imgur.com/YpuR4YV.jpg);
   background-position: 50% 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
