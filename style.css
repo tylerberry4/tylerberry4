@@ -30,7 +30,7 @@ header {
   justify-content: center;
   -webkit-align-items: center;
   align-items: center;
-  margin-bottom: 20px; }
+  margin-bottom: 55px; }
   @media screen and (max-width: 1024px) {
     header {
       background-image: url(http://i.imgur.com/49zZzgv.jpg?2);
