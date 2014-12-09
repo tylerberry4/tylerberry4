@@ -31,7 +31,7 @@ header {
   -webkit-align-items: center;
   align-items: center;
   margin-bottom: 20px; }
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 1024px) {
     header {
       background-image: url(http://i.imgur.com/49zZzgv.jpg?2);
       height: 500px; } }
@@ -58,7 +58,7 @@ header {
   z-index: 10;
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s; }
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 1024px) {
     .logo {
       display: none; } }
 
